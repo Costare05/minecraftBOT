@@ -21,8 +21,9 @@ try:
         else:
             i = tempoMAX
         print(players_online)
-        time.sleep(60)
     if i == 0:
         subprocess.run(["sudo", "shutdown", "-h", "now"], check=True)
+        
+    time.sleep(60)
 except Exception as e:
     print(f"Erro ao conectar ao servidor: {e}")
